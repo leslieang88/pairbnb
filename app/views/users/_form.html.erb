@@ -7,3 +7,38 @@
   <%= form.label :password %>
   <%= form.password_field :password %>
 </div>
+
+<div class="first-name-field">
+  <%= form.label :first_name %>
+  <%= form.text_field :first_name%>
+</div>
+
+<div class="last-name-field">
+  <%= form.label :last_name %>
+  <%= form.text_field :last_name%>
+</div>
+
+<div class="birthdate-field">
+  <%= form.label :birthdate %>
+  <%= form.date_field :birthdate %>
+</div>
+
+<div class="contact_num-field">
+  <%= form.label :contact_num %>
+  <%= form.telephone_field :contact_num %>
+</div>
+
+<div class="description-field">
+  <%= form.label :description %>
+  <%= form.text_area :description %>
+</div>
+
+<div class="country-field">
+  <%= form.label :country %>
+  <%= form.country_select :country %>
+</div>
+
+<div class="password-field">
+  <%= form.label :gender%>
+  <%= form.select :gender, options_for_select([["Male", "M"],["Female", "F"]])%>
+</div>
